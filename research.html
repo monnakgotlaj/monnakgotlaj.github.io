@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research | Jabulile Monnakgotla</title>
+<meta name="description" content="Jabulile Monnakgotla, Junior Research Fellow at the Development Policy Research Unit, University of Cape Town. Research on job quality, living wages, platform work and social protection in South Africa.">
+<style>
+@font-face{font-family:Schola;src:url(fonts/schola-regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Schola;src:url(fonts/schola-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:Schola;src:url(fonts/schola-bold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
+:root{--ink:#000;--muted:#000;--line:#DDDDDD;--accent:#000;--bg:#FFFFFF}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Schola,"Century Schoolbook",Century,Georgia,serif;-webkit-font-smoothing:antialiased}
+
+a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:#000;text-decoration-thickness:2px}
+header{display:grid;grid-template-columns:1fr 200px;gap:32px;align-items:start}
+h1{font:700 2.5rem/1.15 Schola,"Century Schoolbook",Georgia,serif;margin:0 0 10px;letter-spacing:-.01em}
+.title{font-size:1.15rem;font-weight:700;margin:0}
+.inst{font-size:1rem;color:var(--muted);margin:2px 0 0}
+.email{margin:8px 0 0;font-size:.98rem}
+.profiles{margin:14px 0 0;font-size:.92rem;color:var(--muted)}
+.profiles a{margin-right:2px}
+ul.nav{margin:20px 0 0;padding-left:20px;font-size:.98rem}
+ul.nav li{margin:2px 0}
+.photo{width:200px;height:200px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+@media(max-width:640px){header{grid-template-columns:1fr}.photo{order:-1;width:150px;height:150px}h1{font-size:2.1rem}}
+h2{font:700 1.3rem/1.3 Schola,"Century Schoolbook",Georgia,serif;margin:48px 0 14px;padding-top:20px;border-top:1px solid var(--line)}
+p{margin:0 0 14px;text-align:justify}
+ul.feed li,dd,.inst{text-align:justify}
+.year{font-weight:700;color:var(--accent);margin:26px 0 6px;font-size:1rem}
+ul.feed{list-style:none;margin:0;padding:0}
+ul.feed li{padding:8px 0;border-bottom:1px solid #EEEEEE}
+
+.kind{display:inline-block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:6px}
+.by{display:block;font-size:.88rem;color:var(--muted)}
+.me{color:var(--ink);font-weight:700}
+dl{margin:0;display:grid;grid-template-columns:150px 1fr;gap:6px 16px;font-size:.96rem}
+dt{color:var(--muted)}
+dd{margin:0}
+@media(max-width:560px){dl{grid-template-columns:1fr}dt{margin-top:8px}}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted)}
+.layout{display:grid;grid-template-columns:240px minmax(0,860px);justify-content:center;min-height:100vh;background:linear-gradient(to right,#EFEFEF max(240px,calc(50% - 310px)),#FFFFFF max(240px,calc(50% - 310px)))}
+.side{position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto;padding:52px 20px 24px 24px}
+.sname{display:block;font-weight:700;font-size:1.05rem;text-decoration:none;margin-bottom:18px;line-height:1.3}
+.side ul{list-style:none;margin:0;padding:0}
+.side li{margin:0 0 9px}
+.side a{text-decoration:none}
+.side li a:hover{text-decoration:underline}
+.side a.current{font-weight:700}
+main{max-width:860px;width:100%;margin:0;padding:48px 48px 64px}
+@media(max-width:860px){
+ .layout{display:block;background:none}
+ .side{position:static;height:auto;padding:16px 20px 12px;background:#EFEFEF}
+ .sname{margin-bottom:8px}
+ .side ul{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.92rem}
+ .side li{margin:0}
+ .side li a{text-decoration:underline}
+ .subnav{display:none}
+ main{padding:28px 24px 64px}
+}
+.statement{font-style:italic;font-size:1.08rem;line-height:1.55;margin:14px 0 4px;padding-left:14px;border-left:3px solid #000;text-align:left}
+.themes{list-style:none;margin:0;padding:0}
+.themes li{padding:10px 0;border-bottom:1px solid #EEEEEE}
+.themes b{display:block}
+.themes span{font-size:.94rem}
+.sel{margin:0;padding:0;list-style:none}
+.sel li{padding:14px 0;border-bottom:1px solid #EEEEEE}
+.subnav{list-style:none;margin:6px 0 4px;padding:0 0 0 12px;font-size:.9rem}
+.subnav li{margin:0 0 6px}
+.themes a{text-decoration:none}
+.themes a:hover b{text-decoration:underline}
+.back{margin-top:36px}
+.sub{font-size:1.08rem;margin:22px 0 8px}
+.related{display:block;font-size:.88rem;margin-top:6px}
+.sel h3{font-size:1.05rem;margin:0 0 4px}
+.sel p{margin:0 0 6px}
+.outs{font-size:.92rem;margin:0;padding-left:18px}
+.outs li{padding:2px 0;border:none}
+.tag{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid #000;padding:0 5px;margin-left:6px;vertical-align:1px}
+h3{font-weight:700}
+@media(max-width:860px){.side .subnav{display:none}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="side">
+  <a class="sname" href="index.html">Jabulile Monnakgotla</a>
+  <nav><ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="research.html" class="current">Research</a>
+        <ul class="subnav">
+        <li><a href="theme-labour-markets.html">Labour Markets and Employment Policy</a></li>
+        <li><a href="theme-job-quality.html">Job Quality and Decent Work</a></li>
+        <li><a href="theme-wages.html">Wages and Living Standards</a></li>
+        <li><a href="theme-social-protection.html">Social Protection and Economic Security</a></li>
+        <li><a href="theme-institutions.html">Institutions, Poverty and Inequality</a></li>
+        </ul></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="presentations.html">Presentations</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="cv.pdf">CV</a></li>
+  </ul></nav>
+</aside>
+<main>
+<h1>Research</h1>
+<h3 class="sub">Research agenda</h3>
+<p>My research asks whether work in South Africa provides a decent and secure living, and how institutions and public policy shape the answer. At its core is a connected set of questions: how good jobs are and how job quality can be measured, whether wages are enough to meet the cost of a decent standard of living, and who is protected by social security when work does not provide enough. I approach these questions within the wider setting of labour market institutions and employment policy, including minimum wages, employment incentives and regulation, and with attention to what they mean for poverty and inequality.</p>
+<p>Most of this work is empirical, drawing on household surveys, administrative data and primary data collection, and much of it is undertaken with colleagues at the DPRU and with partners in government and research institutions. My current work extends these questions to new forms of employment, such as platform work, and to how the cost of a decent living varies across regions of South Africa. The five themes below organise this work.</p>
+<h3 class="sub">Research themes</h3>
+<ul class="themes">
+  <li><a href="theme-labour-markets.html"><b>Labour Markets and Employment Policy</b></a><span>How employment and unemployment evolve, how labour market institutions and regulation shape them, and what employment incentives and wider employment policy can achieve.</span></li>
+  <li><a href="theme-job-quality.html"><b>Job Quality and Decent Work</b></a><span>What makes a job good or poor, how job quality can be measured with the data available, and how working conditions differ across formal, informal and platform work.</span></li>
+  <li><a href="theme-wages.html"><b>Wages and Living Standards</b></a><span>What workers earn compared with what it costs to live decently, including minimum wages, living wage benchmarks and how earnings change over time.</span></li>
+  <li><a href="theme-social-protection.html"><b>Social Protection and Economic Security</b></a><span>Who is covered by social security and who is left out, how gaps in protection leave workers and households exposed to risk, and how workers can be supported through economic shocks such as the transition away from coal.</span></li>
+  <li><a href="theme-institutions.html"><b>Institutions, Poverty and Inequality</b></a><span>How the design and functioning of public institutions shape economic opportunity and distributional outcomes. This includes my earlier work on crime and inequality in South Africa, and on the structure and financing of local government.</span></li>
+</ul>
+<p style="margin-top:14px">Related interests include skills and labour demand, and the just transition.</p>
+
+<footer>© 2026 Jabulile Monnakgotla</footer>
+</main>
+</div>
+</body>
+</html>
