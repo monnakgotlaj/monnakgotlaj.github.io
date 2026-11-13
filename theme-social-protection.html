@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Social Protection and Economic Security | Jabulile Monnakgotla</title>
+<style>
+@font-face{font-family:Schola;src:url(fonts/schola-regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Schola;src:url(fonts/schola-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:Schola;src:url(fonts/schola-bold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
+:root{--ink:#000;--muted:#000;--line:#DDDDDD;--accent:#000;--bg:#FFFFFF}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Schola,"Century Schoolbook",Century,Georgia,serif;-webkit-font-smoothing:antialiased}
+
+a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:#000;text-decoration-thickness:2px}
+header{display:grid;grid-template-columns:1fr 200px;gap:32px;align-items:start}
+h1{font:700 2.5rem/1.15 Schola,"Century Schoolbook",Georgia,serif;margin:0 0 10px;letter-spacing:-.01em}
+.title{font-size:1.15rem;font-weight:700;margin:0}
+.inst{font-size:1rem;color:var(--muted);margin:2px 0 0}
+.email{margin:8px 0 0;font-size:.98rem}
+.profiles{margin:14px 0 0;font-size:.92rem;color:var(--muted)}
+.profiles a{margin-right:2px}
+ul.nav{margin:20px 0 0;padding-left:20px;font-size:.98rem}
+ul.nav li{margin:2px 0}
+.photo{width:200px;height:200px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+@media(max-width:640px){header{grid-template-columns:1fr}.photo{order:-1;width:150px;height:150px}h1{font-size:2.1rem}}
+h2{font:700 1.3rem/1.3 Schola,"Century Schoolbook",Georgia,serif;margin:48px 0 14px;padding-top:20px;border-top:1px solid var(--line)}
+p{margin:0 0 14px;text-align:justify}
+ul.feed li,dd,.inst{text-align:justify}
+.year{font-weight:700;color:var(--accent);margin:26px 0 6px;font-size:1rem}
+ul.feed{list-style:none;margin:0;padding:0}
+ul.feed li{padding:8px 0;border-bottom:1px solid #EEEEEE}
+
+.kind{display:inline-block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:6px}
+.by{display:block;font-size:.88rem;color:var(--muted)}
+.me{color:var(--ink);font-weight:700}
+dl{margin:0;display:grid;grid-template-columns:150px 1fr;gap:6px 16px;font-size:.96rem}
+dt{color:var(--muted)}
+dd{margin:0}
+@media(max-width:560px){dl{grid-template-columns:1fr}dt{margin-top:8px}}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted)}
+.layout{display:grid;grid-template-columns:240px minmax(0,860px);justify-content:center;min-height:100vh;background:linear-gradient(to right,#EFEFEF max(240px,calc(50% - 310px)),#FFFFFF max(240px,calc(50% - 310px)))}
+.side{position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto;padding:52px 20px 24px 24px}
+.sname{display:block;font-weight:700;font-size:1.05rem;text-decoration:none;margin-bottom:18px;line-height:1.3}
+.side ul{list-style:none;margin:0;padding:0}
+.side li{margin:0 0 9px}
+.side a{text-decoration:none}
+.side li a:hover{text-decoration:underline}
+main{max-width:860px;width:100%;margin:0;padding:48px 48px 64px}
+@media(max-width:860px){
+ .layout{display:block;background:none}
+ .side{position:static;height:auto;padding:16px 20px 12px;background:#EFEFEF}
+ .sname{margin-bottom:8px}
+ .side ul{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.92rem}
+ .side li{margin:0}
+ .side li a{text-decoration:underline}
+ .subnav{display:none}
+ main{padding:28px 24px 64px}
+}
+.statement{font-style:italic;font-size:1.08rem;line-height:1.55;margin:14px 0 4px;padding-left:14px;border-left:3px solid #000;text-align:left}
+.themes{list-style:none;margin:0;padding:0}
+.themes li{padding:10px 0;border-bottom:1px solid #EEEEEE}
+.themes b{display:block}
+.themes span{font-size:.94rem}
+.sel{margin:0;padding:0;list-style:none}
+.sel li{padding:14px 0;border-bottom:1px solid #EEEEEE}
+.subnav{list-style:none;margin:6px 0 4px;padding:0 0 0 12px;font-size:.9rem}
+.subnav li{margin:0 0 6px}
+.themes a{text-decoration:none}
+.themes a:hover b{text-decoration:underline}
+.back{margin-top:36px}
+.sub{font-size:1.08rem;margin:22px 0 8px}
+.related{display:block;font-size:.88rem;margin-top:6px}
+.sel h3{font-size:1.05rem;margin:0 0 4px}
+.sel p{margin:0 0 6px}
+.outs{font-size:.92rem;margin:0;padding-left:18px}
+.outs li{padding:2px 0;border:none}
+.tag{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid #000;padding:0 5px;margin-left:6px;vertical-align:1px}
+h3{font-weight:700}
+@media(max-width:860px){.side .subnav{display:none}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="side">
+  <a class="sname" href="index.html#top">Jabulile Monnakgotla</a>
+  <nav><ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#research">Research</a>
+        <ul class="subnav">
+        <li><a href="theme-labour-markets.html">Labour Markets and Employment Policy</a></li>
+        <li><a href="theme-job-quality.html">Job Quality and Decent Work</a></li>
+        <li><a href="theme-wages.html">Wages and Living Standards</a></li>
+        <li><a href="theme-social-protection.html">Social Protection and Economic Security</a></li>
+        <li><a href="theme-institutions.html">Institutions, Poverty and Inequality</a></li>
+        </ul></li>
+      <li><a href="index.html#publications">Publications</a></li>
+      <li><a href="index.html#presentations">Presentations</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="cv.pdf">CV</a></li>
+  </ul></nav>
+</aside>
+<main>
+<p class="by"><a href="index.html#research">Research</a></p>
+<h1>Social Protection and Economic Security</h1>
+<p>Who is covered by social security and who is left out, and how gaps in protection leave workers and households exposed to risk.</p>
+
+<h2>Working Papers</h2>
+<ul class="feed">
+  <li><a href="https://commerce.uct.ac.za/sites/default/files/media/documents/commerce_uct_ac_za/1093/dpru-wp202404.pdf">Social Security Coverage among the Working-Age Population in South Africa</a>, DPRU Working Paper 202404, 2024
+    <span class="by">Bhorat, H., Köhler, T. and <span class="me">Monnakgotla, J.</span></span></li>
+</ul>
+
+<h2>Conference and Panel Presentations</h2>
+<ul class="feed">
+  <li>Social Security Coverage among the Working-Age Population in South Africa, Economic Society of South Africa Centenary Conference, Cape Town
+    <span class="by">8 to 10 September 2025</span></li>
+  <li>Social Security Coverage among the Working-Age Population in South Africa, BRICS Research Network Meeting, Durban
+    <span class="by">26 to 29 September 2023</span></li>
+</ul>
+
+<p class="back"><a href="index.html#research">Back to Research</a></p>
+<footer>© 2026 Jabulile Monnakgotla</footer>
+</main>
+</div>
+</body>
+</html>

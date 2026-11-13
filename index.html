@@ -57,6 +57,7 @@ main{max-width:860px;width:100%;margin:0;padding:48px 48px 64px}
  .side ul{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.92rem}
  .side li{margin:0}
  .side li a{text-decoration:underline}
+ .subnav{display:none}
  main{padding:28px 24px 64px}
 }
 .statement{font-style:italic;font-size:1.08rem;line-height:1.55;margin:14px 0 4px;padding-left:14px;border-left:3px solid #000;text-align:left}
@@ -66,6 +67,11 @@ main{max-width:860px;width:100%;margin:0;padding:48px 48px 64px}
 .themes span{font-size:.94rem}
 .sel{margin:0;padding:0;list-style:none}
 .sel li{padding:14px 0;border-bottom:1px solid #EEEEEE}
+.subnav{list-style:none;margin:6px 0 4px;padding:0 0 0 12px;font-size:.9rem}
+.subnav li{margin:0 0 6px}
+.themes a{text-decoration:none}
+.themes a:hover b{text-decoration:underline}
+.back{margin-top:36px}
 .sub{font-size:1.08rem;margin:22px 0 8px}
 .related{display:block;font-size:.88rem;margin-top:6px}
 .sel h3{font-size:1.05rem;margin:0 0 4px}
@@ -74,6 +80,7 @@ main{max-width:860px;width:100%;margin:0;padding:48px 48px 64px}
 .outs li{padding:2px 0;border:none}
 .tag{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid #000;padding:0 5px;margin-left:6px;vertical-align:1px}
 h3{font-weight:700}
+@media(max-width:860px){.side .subnav{display:none}}
 </style>
 </head>
 <body>
@@ -82,17 +89,18 @@ h3{font-weight:700}
   <a class="sname" href="#top">Jabulile Monnakgotla</a>
   <nav><ul>
       <li><a href="#about">About</a></li>
-      <li><a href="cv.pdf">CV</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#selected">Selected research</a></li>
-      <li><a href="#ongoing">Ongoing research</a></li>
+      <li><a href="#research">Research</a>
+        <ul class="subnav">
+        <li><a href="theme-labour-markets.html">Labour Markets and Employment Policy</a></li>
+        <li><a href="theme-job-quality.html">Job Quality and Decent Work</a></li>
+        <li><a href="theme-wages.html">Wages and Living Standards</a></li>
+        <li><a href="theme-social-protection.html">Social Protection and Economic Security</a></li>
+        <li><a href="theme-institutions.html">Institutions, Poverty and Inequality</a></li>
+        </ul></li>
       <li><a href="#publications">Publications</a></li>
-      <li><a href="#working-papers">Working papers</a></li>
-      <li><a href="#reports">Research reports</a></li>
-      <li><a href="#briefs">Fact sheets and briefs</a></li>
       <li><a href="#presentations">Presentations</a></li>
-      <li><a href="#background">Positions and education</a></li>
       <li><a href="blog.html">Blog</a></li>
+      <li><a href="cv.pdf">CV</a></li>
   </ul></nav>
 </aside>
 <main>
@@ -103,7 +111,6 @@ h3{font-weight:700}
     <p class="title">Junior Research Fellow</p>
     <p class="inst">Development Policy Research Unit, School of Economics, University of Cape Town</p>
     <p class="inst">Affiliate Researcher, Anker Research Institute</p>
-    <p class="statement">I study how institutions and public policy shape labour market opportunities and the quality of work, and how these processes contribute to poverty and inequality.</p>
     <p class="email"><a href="mailto:jabulile.monnakgotla@uct.ac.za">jabulile.monnakgotla@uct.ac.za</a></p>
     <p class="profiles">
       <a href="https://scholar.google.com/citations?user=-873lWcAAAAJ&hl=en">Google Scholar</a> ·
@@ -118,76 +125,37 @@ h3{font-weight:700}
 
 <h2 id="about">About</h2>
 <p>I am an economist and policy researcher at the Development Policy Research Unit (DPRU) in the School of Economics at the University of Cape Town, where I am a Junior Research Fellow. I am also an Affiliate Researcher in the Global Researcher Network of the Anker Research Institute.</p>
-<p>My research is concerned with the links between labour market institutions, employment conditions and workers' economic security.</p>
+<p>My research examines how institutions and public policy shape labour market opportunities and the quality of work, and how these processes contribute to poverty and inequality. I am particularly interested in the relationship between labour market institutions, employment conditions and workers' economic security.</p>
 <p>My current research focuses on job quality, wages and living standards, social protection, changing forms of employment and employment policy in South Africa. I work primarily with household survey and administrative data and have contributed to living wage estimates using the Anker methodology.</p>
 <p>My work combines applied economic research with policy analysis, with contributions to research undertaken for government departments, policy institutions and international organisations. I hold Honours and Master's degrees in Economic Science from the University of the Witwatersrand.</p>
 
+<h3 class="sub" id="background">Positions and education</h3>
+<dl>
+  <dt>2022 to present</dt><dd>Junior Research Fellow, Development Policy Research Unit, University of Cape Town</dd>
+  <dt>2025 to present</dt><dd>Affiliate Researcher, Global Researcher Network, Anker Research Institute</dd>
+  <dt>Earlier</dt><dd>Junior Research Analyst and Intern Researcher, Development Policy Research Unit; Intern Researcher, Budget Analysis Local Government, Financial and Fiscal Commission</dd>
+  <dt>2013</dt><dd>MCom, Economic Science, University of the Witwatersrand</dd>
+  <dt>2011</dt><dd>Honours, Economic Science, University of the Witwatersrand</dd>
+  <dt>2010</dt><dd>BCom, Economic Science, University of the Witwatersrand</dd>
+</dl>
+
+
 <h2 id="research">Research</h2>
 <h3 class="sub">Research agenda</h3>
-<p>My work asks how the rules, institutions and policies that govern work affect who finds employment, the conditions under which people work, and what they earn. Most of my research is empirical and focused on South Africa, drawing on household surveys, administrative data and primary data collection. Much of it is undertaken with colleagues at the DPRU and with partners in government and research institutions, and is written with policy use in mind.</p>
-
+<p>My research asks whether work in South Africa provides a decent and secure living, and how institutions and public policy shape the answer. At its core is a connected set of questions: how good jobs are and how job quality can be measured, whether wages are enough to meet the cost of a decent standard of living, and who is protected by social security when work does not provide enough. I approach these questions within the wider setting of labour market institutions and employment policy, including minimum wages, employment incentives and regulation, and with attention to what they mean for poverty and inequality.</p>
+<p>Most of this work is empirical, drawing on household surveys, administrative data and primary data collection, and much of it is undertaken with colleagues at the DPRU and with partners in government and research institutions. My current work extends these questions to new forms of employment, such as platform work, and to how the cost of a decent living varies across regions of South Africa. The five themes below organise this work.</p>
 <h3 class="sub">Research themes</h3>
 <ul class="themes">
-  <li><b>Labour Markets and Employment Policy</b><span>How employment and unemployment evolve, how labour market institutions and regulation shape them, and what employment incentives and wider employment policy can achieve.</span></li>
-  <li><b>Job Quality and Decent Work</b><span>What makes a job good or poor, how job quality can be measured with the data available, and how working conditions differ across formal, informal and platform work.</span></li>
-  <li><b>Wages and Living Standards</b><span>What workers earn compared with what it costs to live decently, including minimum wages, living wage benchmarks and how earnings change over time.</span></li>
-  <li><b>Social Protection and Economic Security</b><span>Who is covered by social security and who is left out, and how gaps in protection leave workers and households exposed to risk.</span></li>
-  <li><b>Institutions, Poverty and Inequality</b><span>How the design and functioning of public institutions shape economic opportunity and distributional outcomes. This includes my earlier work on crime and inequality in South Africa, and on the structure and financing of local government.</span>
-    <span class="related">Related work: <a href="https://doi.org/10.1086/719646">Crime, Income and Inequality</a>, <i>Economic Development and Cultural Change</i>, 2022 · <a href="https://commerce.uct.ac.za/sites/default/files/content_migration/commerce_uct_ac_za/1093/files/DPRU%2520WP202001.pdf">Crime and Inequality in South Africa</a>, DPRU Working Paper, 2020 · <a href="https://commerce.uct.ac.za/sites/default/files/content_migration/commerce_uct_ac_za/1093/files/DPRU%2520WP201704.pdf">The Socio-Economic Determinants of Crime in South Africa</a>, DPRU Working Paper, 2017 · Amalgamation of South Africa's Rural Municipalities, <i>Commonwealth Journal of Local Governance</i>, 2017 · <a href="https://www.ffc.co.za/_files/ugd/b8806a_39111f8287e846d099c327caad5b666d.pdf">The Adequacy of Local Equitable Share and Conditional Grants for Rural Development</a>, Financial and Fiscal Commission, 2016</span></li>
+  <li><a href="theme-labour-markets.html"><b>Labour Markets and Employment Policy</b></a><span>How employment and unemployment evolve, how labour market institutions and regulation shape them, and what employment incentives and wider employment policy can achieve.</span></li>
+  <li><a href="theme-job-quality.html"><b>Job Quality and Decent Work</b></a><span>What makes a job good or poor, how job quality can be measured with the data available, and how working conditions differ across formal, informal and platform work.</span></li>
+  <li><a href="theme-wages.html"><b>Wages and Living Standards</b></a><span>What workers earn compared with what it costs to live decently, including minimum wages, living wage benchmarks and how earnings change over time.</span></li>
+  <li><a href="theme-social-protection.html"><b>Social Protection and Economic Security</b></a><span>Who is covered by social security and who is left out, and how gaps in protection leave workers and households exposed to risk.</span></li>
+  <li><a href="theme-institutions.html"><b>Institutions, Poverty and Inequality</b></a><span>How the design and functioning of public institutions shape economic opportunity and distributional outcomes. This includes my earlier work on crime and inequality in South Africa, and on the structure and financing of local government.</span></li>
 </ul>
 <p style="margin-top:14px">Related interests include skills and labour demand, and the just transition.</p>
 
-<h2 id="selected">Selected Research</h2>
-<ul class="sel">
-  <li><h3>Job Quality in South Africa</h3>
-    <p>Proposed a job quality index for ongoing monitoring using national survey data, with Morné Oosthuizen, and contributed to a sector study of job quality in insurance.</p>
-    <ul class="outs">
-      <li><a href="https://commerce.uct.ac.za/sites/default/files/content_migration/commerce_uct_ac_za/1093/files/DPRU%2520WP%2520202103.pdf">Job Quality in South Africa: A Proposed Index for Ongoing Monitoring of Job Quality</a>, with Oosthuizen, M., DPRU Working Paper, 2021</li>
-      <li><a href="https://inseta.org.za/wp-content/uploads/2024/03/Job-Quality-in-Insurance-Sector-Research-Report.pdf">Job Quality in South Africa's Insurance Sector</a>, with Oosthuizen, M., Hill, R., Molala, R. and Vollenhoven, T., DPRU, 2022</li>
-      <li>Presentation: Tracking the Quality of Jobs in South Africa, IZA, World Bank, NJD and UNU-WIDER Jobs and Development Conference, 2020</li>
-    </ul></li>
-  <li><h3>Living Wages in South Africa</h3>
-    <p>Contributed to the Anker methodology living wage benchmark for the Cape Winelands, and was first author of the benchmark for the Western and Eastern Cape honeybush regions.</p>
-    <ul class="outs">
-      <li><a href="https://static1.squarespace.com/static/63e128dff6c16159094155ea/t/69dff03f6ca7d1019838b0e9/1776283711166/Living+Wage+Report+for+Cape+Winelands+Region%2C+South+Africa+FINAL+%281%29.pdf">Living Wage Report for Cape Winelands Region, South Africa</a>, with Stanwix, B. and Voorend, K., Anker Research Institute, 2026</li>
-      <li>Living Wage Report 2025, Western and Eastern Cape Honeybush Regions, with Voorend, K., Stanwix, B. and Anker, M., Anker Research Institute</li>
-      <li>Presentation: Anker Living Wage Report, Western Cape, South Africa: Findings and Estimation, stakeholder review session, Cape Town, with Stanwix, B., 2025</li>
-    </ul></li>
-  <li><h3>Platform Work and Changing Forms of Employment</h3>
-    <p>Contributed to survey design, quantitative analysis and report preparation for an exploratory study of location based platform work for the Department of Employment and Labour. Earlier work profiled digital skills gaps across Africa.</p>
-    <ul class="outs">
-      <li>Location-based Platform Work in South Africa: An Exploratory Study, Development Policy Research Unit, report for the Department of Employment and Labour, 2025</li>
-      <li><a href="https://www.brookings.edu/articles/digitalization-and-digital-skills-gaps-in-africa-an-empirical-profile/">Digitalization and Digital Skills Gaps in Africa: An Empirical Profile</a>, with Bhorat, H., Signé, L., Asmal, Z. and Rooney, C., Brookings Institution, 2023</li>
-      <li>Addressing Digital Gaps in Africa to Boost Inclusive Growth and Economic Convergence, with Bhorat, H., Signé, L., Asmal, Z. and Rooney, C., book chapter, Brookings Institution, 2024</li>
-      <li>Presentation: Digitalization and Digital Skills Gaps in Africa, Brookings and DPRU webinar, 2023</li>
-    </ul></li>
-  <li><h3>Social Protection and Economic Security</h3>
-    <p>Examined social security coverage among working age South Africans using household survey data, with Haroon Bhorat and Timothy Köhler.</p>
-    <ul class="outs">
-      <li><a href="https://commerce.uct.ac.za/sites/default/files/media/documents/commerce_uct_ac_za/1093/dpru-wp202404.pdf">Social Security Coverage among the Working-Age Population in South Africa</a>, with Bhorat, H. and Köhler, T., DPRU Working Paper, 2024</li>
-      <li>Presentations: Economic Society of South Africa Centenary Conference, 2025; BRICS Research Network Meeting, 2023</li>
-    </ul></li>
-  <li><h3>Employment Policy and Labour Market Outcomes</h3>
-    <p>Contributed to analysis of the 2025 National Minimum Wage increase for the National Minimum Wage Commission, to work on coal sector jobs and just transition policy for the Agence Française de Développement, and to studies of skills supply and employment creation.</p>
-    <ul class="outs">
-      <li><a href="https://www.labour.gov.za/DocumentCenter/Regulations%20and%20Notices/Notices/Basic%20Conditions%20of%20Employment/Investigation%20into%20the%20National%20Minimum%20Wage%20Invitation%20for%20written%20representations%20by%2012%20Jan%202026.pdf">Measuring the Impact of the 2025 National Minimum Wage Increase</a>, with Bhorat, H., Köhler, T. and Stanwix, B., National Minimum Wage Commission, 2025</li>
-      <li><a href="https://www.afd.fr/sites/default/files/2025-10/pr376_web_v1_0.pdf">Ameliorating the Consequences of Coal Job Destruction: A Just Transition Policy Matrix Approach</a>, with Bhorat, H., Sayed, A. and Steenkamp, F., AFD Research Paper No. 376, 2025</li>
-      <li><a href="https://www.afd.fr/sites/default/files/2025-07/pr_351_0.pdf">Counting and Profiling Coal Mining Industry Jobs: A Guideline to Using Administrative Data</a>, with Bhorat, H., Martin, L. and Steenkamp, F., AFD Research Paper No. 351, 2025</li>
-      <li><a href="https://commerce.uct.ac.za/sites/default/files/content_migration/commerce_uct_ac_za/1093/files/DPRU%2520WP202102.pdf">Employment Creation Potential, Labor Skills Requirements, and Skill Gaps for Young People: A South African Case Study</a>, with Allen, C., Asmal, Z., Bhorat, H., Hill, R., Oosthuizen, M. and Rooney, C., DPRU Working Paper and Brookings Institution, 2021</li>
-      <li><a href="https://www.dhet.gov.za/Planning%20Monitoring%20and%20Evaluation%20Coordination/Report%20on%20Skills%20Supply%20and%20Demand%20in%20South%20Africa%20-%202022%20%281%29.pdf">Skills Supply and Demand in South Africa</a>, with Khuluvhe, M., Bhorat, H., Oosthuizen, M. and others, Department of Higher Education and Training, 2022; <a href="https://lmi-research.org.za/wp-content/uploads/2020/11/1.1.B-Skills-Supply-Demand-in-SA_Report.pdf">2020 edition</a>, Labour Market Intelligence Research Programme</li>
-    </ul></li>
-</ul>
-<p class="by" style="margin-top:10px">Full author lists are given under Publications below.</p>
-
-<h2 id="ongoing">Ongoing Research</h2>
-<ul class="feed">
-  <li>Exploring Job Quality in Platform Work: A South African Case Study
-    <span class="by">Sole authored working paper</span></li>
-  <li>Subnational living wage and living income estimates for South Africa
-    <span class="by">With colleagues at the DPRU and the Anker Research Institute</span></li>
-</ul>
-
-<h2 id="publications">Peer Reviewed Publications and Book Chapters</h2>
+<h2 id="publications">Publications</h2>
+<h3 class="sub">Peer Reviewed Publications and Book Chapters</h3>
 <ul class="feed">
   <li>South Africa: In Search of an Employment Escape to a Growth Path, in <i>New Pathways to Job Creation and Development in Africa: The Promise of Industries without Smokestacks</i>, Chapter 10, Brookings Institution, 2025
     <span class="by">Allen, C., Asmal, Z., Bhorat, H., Hill, R., <span class="me">Monnakgotla, J.</span>, Oosthuizen, M. and Rooney, C.</span></li>
@@ -199,7 +167,7 @@ h3{font-weight:700}
     <span class="by">Ncube, M. and <span class="me">Monnakgotla, J.</span></span></li>
 </ul>
 
-<h2 id="working-papers">Working Papers</h2>
+<h3 class="sub" id="working-papers">Working Papers</h3>
 <ul class="feed">
   <li><a href="https://commerce.uct.ac.za/sites/default/files/media/documents/commerce_uct_ac_za/1093/dpru-wp202404.pdf">Social Security Coverage among the Working-Age Population in South Africa</a>, DPRU Working Paper 202404, 2024
     <span class="by">Bhorat, H., Köhler, T. and <span class="me">Monnakgotla, J.</span></span></li>
@@ -215,7 +183,7 @@ h3{font-weight:700}
     <span class="by">Bhorat, H., Lilenstein, A., <span class="me">Monnakgotla, J.</span>, Thornton, A. and van der Zee, K.</span></li>
 </ul>
 
-<h2 id="reports">Research Reports and Policy Outputs</h2>
+<h3 class="sub" id="reports">Research Reports and Policy Outputs</h3>
 <ul class="feed">
   <li><a href="https://static1.squarespace.com/static/63e128dff6c16159094155ea/t/69dff03f6ca7d1019838b0e9/1776283711166/Living+Wage+Report+for+Cape+Winelands+Region%2C+South+Africa+FINAL+%281%29.pdf">Living Wage Report for Cape Winelands Region, South Africa</a>, Anker Research Institute, 2026
     <span class="by">Stanwix, B., <span class="me">Monnakgotla, J.</span> and Voorend, K.</span></li>
@@ -253,7 +221,7 @@ h3{font-weight:700}
     <span class="by">Ncube, M. and <span class="me">Monnakgotla, J.</span></span></li>
 </ul>
 
-<h2 id="briefs">Fact Sheets and Policy Briefs</h2>
+<h3 class="sub" id="briefs">Fact Sheets and Policy Briefs</h3>
 <ul class="feed">
   <li><a href="https://www.uj.ac.za/wp-content/uploads/2021/10/sarchi-id-pb-2023-07-bhorat-et-al-june-2023.pdf">Who are the Robots Coming For? The Evolving Task Content of Employment in South Africa</a>, SARChI Industrial Development Policy Brief PB 2023-07, 2023
     <span class="by">Bhorat, H., Hill, R., Köhler, T., <span class="me">Monnakgotla, J.</span> and Steenkamp, F.</span></li>
@@ -283,16 +251,6 @@ h3{font-weight:700}
     <span class="by">1 to 4 September 2020</span></li>
 </ul>
 
-<h2 id="background">Positions and education</h2>
-<dl>
-  <dt>2022 to present</dt><dd>Junior Research Fellow, Development Policy Research Unit, University of Cape Town</dd>
-  <dt>2025 to present</dt><dd>Affiliate Researcher, Global Researcher Network, Anker Research Institute</dd>
-  <dt>Earlier</dt><dd>Junior Research Analyst and Intern Researcher, Development Policy Research Unit; Intern Researcher, Budget Analysis Local Government, Financial and Fiscal Commission</dd>
-  <dt>2013</dt><dd>MCom, Economic Science, University of the Witwatersrand</dd>
-  <dt>2011</dt><dd>Honours, Economic Science, University of the Witwatersrand</dd>
-  <dt>2010</dt><dd>BCom, Economic Science, University of the Witwatersrand</dd>
-  <dt>Service</dt><dd>Reviewer for <i>Evaluation Review</i>, <i>Review of Development Economics</i> and <i>Urban Forum</i>; external moderator, School of Economics, University of Johannesburg</dd>
-</dl>
 
 <footer>© 2026 Jabulile Monnakgotla</footer>
 </main>
